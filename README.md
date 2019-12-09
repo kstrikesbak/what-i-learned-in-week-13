@@ -1,36 +1,76 @@
-# **WHAT I LEARNED IN  WEEK 12** 
+# **WHAT I LEARNED IN  WEEK 13** 
 ___
 
-    It's Week 12. Time is flying 
+    It's Week 13. Time is flying 
     Tell JK I'm still Rowling. - Kejal
 
 
-## `oops`
+## `.forEach`
 
-This was an intro to Object Orientated programming. 'this' is used to address the exact object we are talking about that. 
+when we aren't interested in the index and want to do the same thing to each index...
+
 
 ```javascript
-
+students.forEach(function(student){
+    console.log(student)
+})
 
 ```
 
-## `ToDOM`
+## `Arrow Function`
 
-Used DOM to make a to do app. 
+Shorter and much simpler way to express functions. Also, allows us to write functions without having to label them!!
+NOTE: Do not use for methods.
 
-## `ToDO-Two`
+```javascript
+const isComplete = (todo => todo.complete)
 
-We worked in pairs and improved our To-Do apps with new features.
-We manipulated the Dom. However, it is better to use arrays as then the data can later be used. 
+```
 
-## `Componentize`
 
-We were introduced to several websites that adds CSS to our sites. This allows programmers to focus on the code rather than worry about the front end.
+## `Linked List`
 
-* Bootstrap
+Data structure. Value contains node and an object that contains data with a pointer to the next node in the list. 
 
-* Semantic UI
+Links are pointers to another node object or null if no subsequent node. 
 
-* Materialize
+![Linked List](./linked-list.png)
 
-* Bulma
+```javascript
+const LinkedList = {
+head : {
+    value :3,
+    next : {
+        value :15,
+        next :{
+
+        }
+    }
+}
+}
+
+const node1 = {
+    value :3,
+    next:node2
+}
+
+const node2 = {
+    value :15,
+    next:null
+}
+
+console.log(linkedList.head.next.value) ==== 3
+```
+
+
+
+## `Object deconstruction`
+
+Destructuring is useful because it allows you to do in a single line, what would otherwise require multiple lines.
+
+```javascript
+  const {species, period, carnivore, extinct} = dinosaur;
+```
+
+
+
